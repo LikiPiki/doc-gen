@@ -1,0 +1,48 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[english, russian]{babel}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=3cm,rmargin=1.5cm}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Теорема}
+\newtheorem{myrule}{Правило}
+
+\usepackage{pgfplots}
+
+\usepackage{mdframed}
+\mdfdefinestyle{theoremsStyle}{
+	innertopmargin=5pt,
+	innerbottommargin=10pt
+}
+\newmdtheoremenv[style=theoremsStyle]{btheorem}{Теорема}
+\newmdtheoremenv[style=theoremsStyle]{brule}{Правило}
+
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\usepackage{tikz}
+
+\begin{document}
+\def\caf{14}
+\def\prepod{ФИО препода}
+\def\prepodz{должность преподаа}
+\def\labname{название лабораторной работы}
+\def\labdist{название дисциплины}
+
+% Титульная страница
+\input{titul.tex}
+
+\setcounter{page}{2}
+
+% Страницы документа
+\input{text.tex}
+
+\titlepage
+
+\end{document}
