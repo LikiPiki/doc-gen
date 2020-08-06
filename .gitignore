@@ -1,3 +1,4 @@
-./doc-gen
+doc-gen
+!cmd/doc-gen
 !cmd
 .DS-Store
