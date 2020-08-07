@@ -4,6 +4,7 @@
 // templates/full/main.tex
 // templates/full/text.tex
 // templates/full/titul.tex
+// templates/simple/main.tex
 package templates
 
 import (
@@ -140,6 +141,26 @@ func templatesFullTitulTex() (*asset, error) {
 	return a, nil
 }
 
+var _templatesSimpleMainTex = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x54\x8d\x31\xae\x03\x21\x0c\x05\x7b\x9f\xe2\x1f\xe0\x37\xc9\x75\x96\x2d\x0c\xbc\x65\xad\x10\x07\x61\x53\x44\x88\xbb\xa7\x8a\x94\x6d\x67\x46\x9a\x90\x5f\x69\x3c\xa1\x9e\x2a\x9b\x6d\xb7\x7b\xf3\x7d\x72\x77\x49\x15\x8b\xc2\x30\x34\x4e\x0f\x2e\xd8\xa0\xa5\x8a\x9d\xff\x7f\x7d\x98\x09\xeb\x3e\x23\x47\xd4\x4b\x34\x45\x33\xd4\x0f\xe9\xe6\x57\x71\xbe\x1b\x7a\xc7\xb1\x88\x42\x44\x11\x9d\xdf\xf1\x22\xa2\x00\xcd\x3f\xe0\x13\x00\x00\xff\xff\xf3\x83\x07\xa8\x95\x00\x00\x00")
+
+func templatesSimpleMainTexBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesSimpleMainTex,
+		"templates/simple/main.tex",
+	)
+}
+
+func templatesSimpleMainTex() (*asset, error) {
+	bytes, err := templatesSimpleMainTexBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/simple/main.tex", size: 149, mode: os.FileMode(420), modTime: time.Unix(1596744286, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
 // Asset loads and returns the asset for the given name.
 // It returns an error if the asset could not be found or
 // could not be loaded.
@@ -192,9 +213,10 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"templates/full/main.tex":  templatesFullMainTex,
-	"templates/full/text.tex":  templatesFullTextTex,
-	"templates/full/titul.tex": templatesFullTitulTex,
+	"templates/full/main.tex":   templatesFullMainTex,
+	"templates/full/text.tex":   templatesFullTextTex,
+	"templates/full/titul.tex":  templatesFullTitulTex,
+	"templates/simple/main.tex": templatesSimpleMainTex,
 }
 
 // AssetDir returns the file names below a certain
@@ -243,6 +265,9 @@ var _bintree = &bintree{nil, map[string]*bintree{
 			"main.tex":  &bintree{templatesFullMainTex, map[string]*bintree{}},
 			"text.tex":  &bintree{templatesFullTextTex, map[string]*bintree{}},
 			"titul.tex": &bintree{templatesFullTitulTex, map[string]*bintree{}},
+		}},
+		"simple": &bintree{nil, map[string]*bintree{
+			"main.tex": &bintree{templatesSimpleMainTex, map[string]*bintree{}},
 		}},
 	}},
 }}

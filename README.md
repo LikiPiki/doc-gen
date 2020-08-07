@@ -1,6 +1,6 @@
 # doc-gen
 
-The simple *golang* utility to generate *LaTeX* template documents.
+The simple *golang* utility to generate *LaTeX* documents from templates.
 
 ```bash
 go install github.com/likipiki/doc-gen/..
@@ -13,6 +13,7 @@ Usage:
 
 Available Commands:
   full        Create default lab A4 doc with title page
+  simple      Create default LaTeX document
   help        Help about any command
 
 Flags:
