@@ -1,9 +1,8 @@
 # doc-gen
-
 The simple *golang* utility to generate *LaTeX* documents from templates.
 
 ```bash
-go install github.com/likipiki/doc-gen/..
+go install github.com/likipiki/doc-gen/...
 ```
 
 ### How to use
@@ -27,4 +26,4 @@ Use "doc-gen [command] --help" for more information about a command.
 
 2. Go to [Releases](https://github.com/LikiPiki/doc-gen/releases) section and download binary to os OS
 
-**If you want to add custom templates please go to [WIKI Section](https://github.com/LikiPiki/doc-gen/wiki)**
+**If you want to add custom templates please go to [WIKI Section](https://github.com/LikiPiki/doc-gen/wiki/Doc-gen-Wiki)**
