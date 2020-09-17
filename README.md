@@ -1,4 +1,5 @@
-# doc-gen
+# doc-gen ![Build status](https://img.shields.io/github/workflow/status/likipiki/doc-gen/Go)
+
 The simple *golang* utility to generate *LaTeX* documents from templates.
 
 ```bash
