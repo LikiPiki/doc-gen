@@ -8,7 +8,16 @@
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=3cm,rmargin=1.5cm}
 
-\usepackage{amsthm}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage[tableposition=below]{caption}
+\captionsetup[longtable]{skip=1em}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0pt}
+\setenumerate{itemsep=0pt}
+
+\usepackage{amsmath, amsfonts, amssymb}
 \newtheorem{theorem}{Теорема}
 \newtheorem{myrule}{Правило}
 
